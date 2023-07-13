@@ -1,0 +1,7 @@
+let populacaoDaCidade = 30;
+
+console.log(populacaoDaCidade);
+
+populacaoDaCidade = 50;
+
+console.log(populacaoDaCidade);
