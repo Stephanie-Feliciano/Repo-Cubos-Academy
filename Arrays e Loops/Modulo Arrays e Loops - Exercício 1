@@ -1,0 +1,29 @@
+const nomePaises = ['Brasil', 'Argentina', 'Bolivia', 'Uruguai', 'Equador'];
+console.log(nomePaises);
+
+// acrescentando item no final da lista.
+nomePaises.push('Paraguai');
+console.log(nomePaises);
+
+// retirando item no final da lista.
+nomePaises.pop();
+console.log(nomePaises);
+
+// acrescentando item no início da lista.
+nomePaises.unshift('Peru');
+console.log(nomePaises);
+
+// retirando item no ínicio da lista.
+nomePaises.shift();
+console.log(nomePaises);
+
+// imprindo última item da lista.
+const ultimo = nomePaises.length - 1;
+console.log(nomePaises[ultimo]);
+
+// imprimir a posição 2 da lista.
+console.log(nomePaises[2]);
+
+// imprimir o segundo país da lista.
+console.log(nomePaises[1]);
+

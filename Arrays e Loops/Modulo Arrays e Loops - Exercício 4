@@ -1,0 +1,10 @@
+const palavraInserida = 'vermelho';
+
+let quantidade = 0
+for (let letra of palavraInserida) {
+    if (letra === 'o') {
+        quantidade++;
+    }
+}
+
+console.log(quantidade);

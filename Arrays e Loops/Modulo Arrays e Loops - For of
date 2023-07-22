@@ -1,0 +1,7 @@
+// FOR OF / FOR ITEM, laço de repetição que irá percorrer o item X em uma coleção da coleção Y.
+
+const listaDeNomes = ['Ana', 'Maria', 'João', 'Bento', 'Theodoro', 'Benjamin', 'Helena'];
+
+for (let nome of listaDeNomes) {
+    console.log(nome);
+}
