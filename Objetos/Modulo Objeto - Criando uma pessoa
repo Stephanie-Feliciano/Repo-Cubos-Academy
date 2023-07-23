@@ -7,4 +7,4 @@ const pessoa = {
     peso: 79,
 };
 
-console.log(`Meu nome é ${pessoa.nome}`)
+console.log(`Meu nome é ${pessoa.nome}, tenho ${pessoa.altura} e peso ${pessoa.peso}.`)
