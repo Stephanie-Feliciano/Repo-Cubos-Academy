@@ -1,3 +1,4 @@
+// será utilizado para realização dos exercícios do módulo.
 // Exercício 1 - Calculadora de IMC
 
 let peso = 80;
