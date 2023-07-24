@@ -1,0 +1,24 @@
+const produtosConsumidos = [{
+    nomeDoProduto: 'café com leite',
+    precoUnitario: 300,
+    quantidadeComprada: 1
+},
+{
+    nomeDoProduto: 'pão de queijo',
+    precoUnitario: 750,
+    quantidadeComprada: 2
+},
+
+{
+    nomeDoProduto: 'salada de fruta',
+    precoUnitario: 500,
+    quantidadeComprada: 2
+}]
+
+const comanda = {
+    nomeDoCliente: 'Fulano',
+    idadeDoCliente: 23,
+    produtosConsumidos
+}
+
+console.log(comanda)

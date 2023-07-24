@@ -1,0 +1,35 @@
+// continuação do exercício 2 do modulo Objetos
+
+const produtosConsumidos = [{
+    nomeDoProduto: 'café com leite',
+    precoUnitario: 300,
+    quantidadeComprada: 1
+},
+{
+    nomeDoProduto: 'pão de queijo',
+    precoUnitario: 750,
+    quantidadeComprada: 2
+},
+
+{
+    nomeDoProduto: 'salada de fruta',
+    precoUnitario: 500,
+    quantidadeComprada: 2
+}]
+
+
+const comanda = {
+    nomeDoCliente: 'Fulano',
+    idadeDoCliente: 23,
+    produtosConsumidos
+}
+
+
+console.log(comanda.nomeDoCliente);
+console.log(comanda.idadeDoCliente);
+
+idadeDoCliente = 20;
+
+console.log(idadeDoCliente);
+console.log(comanda.produtosConsumidos[0].nomeDoProduto);
+console.log(produtosConsumidos[produtosConsumidos.length - 2].precoUnitario);
