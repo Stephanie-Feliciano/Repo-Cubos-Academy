@@ -1,4 +1,19 @@
 
+// refatorando o exercício
+
+function imprimirApresentacao(pessoa) {
+    if (cliente.idade < 21) {
+        console.log(`Olá! Meu nome é ${cliente.nome}, sou um(a) jovem de ${cliente.idade} anos, ${cliente.altura} de altura e sou ${cliente.profissao}.`);
+
+    } else if (cliente.idade < 65) {
+        console.log(`Olá! Meu nome é ${cliente.nome}, sou um(a) adulto(a) de ${cliente.idade} anos, ${cliente.altura} de altura e sou ${cliente.profissao}.`);
+
+    } else {
+        console.log(`Olá! Meu nome é ${cliente.nome}, sou um(a) idoso(a) de ${cliente.idade} anos, ${cliente.altura} de altura e sou ${cliente.profissao}.`);
+
+    }
+}
+
 const cliente = {
     nome: 'João',
     idade: 12,
@@ -6,8 +21,21 @@ const cliente = {
     altura: 1.04
 }
 
-function imprimirApresentacao(pessoa) {
-    console.log(`Olá! Meu nome é ${cliente.nome}, sou um jovem de ${cliente.idade} anos, ${cliente.altura} de altura e sou ${cliente.profissao}.`)
+const cliente1 = {
+    nome: 'Maria',
+    idade: 70,
+    profissao: 'cozinheira',
+    altura: 1.65
 }
 
+const cliente2 = {
+    nome: 'Guilherme',
+    idade: 35,
+    profissao: 'advogado',
+    altura: 1.83
+}
+
+
 imprimirApresentacao(cliente);
+imprimirApresentacao(cliente1);
+imprimirApresentacao(cliente2);

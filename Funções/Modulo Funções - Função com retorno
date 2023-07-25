@@ -1,13 +1,11 @@
-// verificar se a pessoa é maior de idade ou não
 
-function verificandoSeEMaiorDeIdade(idade) {
+//verificar se a pessoa é ou não maior de idade.
+
+function verificarSeEMaiorDeIdade(idade) {
     if (idade >= 18) {
-        // é maior de idade
-        return true;
+        //é maior de idade
     } else {
-        // é menor de idade
-        return false;
+        //é menor de idade
     }
 }
-
-const retornoDaFuncao = verificandoSeEMaiorDeIdade(21);
+verificarSeEMaiorDeIdade(20)
