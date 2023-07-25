@@ -1,0 +1,13 @@
+
+const cliente = {
+    nome: 'João',
+    idade: 12,
+    profissao: 'estudante',
+    altura: 1.04
+}
+
+function imprimirApresentacao(pessoa) {
+    console.log(`Olá! Meu nome é ${cliente.nome}, sou um jovem de ${cliente.idade} anos, ${cliente.altura} de altura e sou ${cliente.profissao}.`)
+}
+
+imprimirApresentacao(cliente);
