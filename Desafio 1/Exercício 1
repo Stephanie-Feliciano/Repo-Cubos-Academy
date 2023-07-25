@@ -1,3 +1,7 @@
+
+//Faça um programa que calcula o total acumulado no cofre até o momento.
+
+
 const listaDeNumero = [1, 2, 3, 4];
 
 let somaDaLista = 0
