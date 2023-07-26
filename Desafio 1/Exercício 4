@@ -1,0 +1,15 @@
+//Faça um programa que selecione dentre uma lista de valores, apenas aqueles que são permitidos para se jogar.
+
+const min = 1;
+const max = 1;
+const valores = [1, 2, 3, 4];
+
+let podeApostar = [];
+
+for (let apostaDeValores of valores) {
+    if (apostaDeValores >= min && apostaDeValores <= max) {
+        podeApostar.push(apostaDeValores);
+    }
+}
+
+
