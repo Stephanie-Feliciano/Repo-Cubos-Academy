@@ -1,4 +1,5 @@
-// função abaixo irá determinar a faixa etaria.
+// função abaixo irá determinar a faixa etaria utilizando a função "determinarFaixaEtaria(idade)" dentro da função 
+// "imprimirApresentacao".
 
 function determinarFaixaEtaria(idade) {
     if (idade <= 21) {
