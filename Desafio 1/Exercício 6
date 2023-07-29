@@ -1,0 +1,19 @@
+var lista = [18, 55, 9];
+
+let maisNova = 0;
+
+for (let verificarIdade of lista) {
+    if (verificarIdade >= 18)
+        if (maisNova == 0) {
+            maisNova = verificarIdade;
+
+        } else if (verificarIdade < maisNova) {
+            maisNova = verificarIdade;
+        }
+}
+
+if (maisNova == 0) {
+    console.log("CRESCA E APARECA");
+} else {
+    console.log(maisNova);
+}
