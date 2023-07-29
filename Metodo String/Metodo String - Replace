@@ -1,0 +1,7 @@
+// Permite realizar busca por um texto numa string e substituir a primeira ocorrência por uma nova.
+
+const saudacao = 'Meu nome é Teste, prazer em conhecer';
+
+const alteracao = saudacao.replace('Teste', 'Stephanie');
+
+console.log(alteracao);

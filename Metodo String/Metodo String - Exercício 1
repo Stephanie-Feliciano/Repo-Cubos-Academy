@@ -1,0 +1,6 @@
+
+const numeroOriginal = '100.00';
+
+const numeroModificado = numeroOriginal.replace('.', ',');
+
+console.log(numeroModificado);
