@@ -1,0 +1,19 @@
+
+// const palavra = 'bola';
+// const palavraSplit = palavra.split();
+// const palavraInvertida = palavraSplit.reverse('bola');
+
+
+function palavraInvertida(texto) {
+  const arrayDeLetras = texto.split('');
+  const arrayInvertido = arrayDeLetras.reverse();
+
+  let textoInvertido = '';
+
+  for (let letra of arrayDeLetras) {
+    textoInvertido += letra;
+  }
+  console.log(textoInvertido);
+}
+
+palavraInvertida('bola no pé');

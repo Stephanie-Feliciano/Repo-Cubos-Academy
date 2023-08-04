@@ -1,0 +1,10 @@
+
+function textoInvertido(texto) {
+  const listaDeLetras = texto.split('');
+  listaDeLetras.reverse();
+
+  const listaDeLetrasInvertidas = listaDeLetras.join();
+  console.log(listaDeLetrasInvertidas);
+}
+
+textoInvertido('teste teste2');
