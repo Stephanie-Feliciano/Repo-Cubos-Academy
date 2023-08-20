@@ -1,0 +1,20 @@
+
+const nomeMarca = [
+  { nome: 'X5', marca: 'bmw', ano: 2021, cor: 'preto' },
+  { nome: 'FordK', marca: 'ford', ano: 2022, cor: 'vermelho' },
+  { nome: 'HB20', marca: 'hyundai', ano: 2017, cor: 'prata' }
+];
+
+const consultaCarro = nomeMarca.findIndex((marca) => {
+  return marca.marca === 'ford';
+});
+
+console.log(consultaCarro);
+
+const nomes = ['pedro', 'tiago', 'joao'];
+
+const posicaoDeNome = nomes.findIndex((posicao) => {
+  return posicao === 'teste';
+});
+
+console.log(posicaoDeNome); // return - 1, dado não encontrato

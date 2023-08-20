@@ -1,0 +1,17 @@
+const nomeMarca = [
+  { nome: 'X5', marca: 'bmw', ano: 2021, cor: 'preto' },
+  { nome: 'FordK', marca: 'ford', ano: 2022, cor: 'vermelho' },
+  { nome: 'HB20', marca: 'hyundai', ano: 2017, cor: 'prata' }
+];
+
+const consultaCarro = nomeMarca.find((marca) => {
+  return marca.marca === 'bmw';
+});
+
+console.log(consultaCarro);
+
+// const resultado = usuarios.find((usuario) => {
+//   return usuario.nome === 'teste';
+// });
+
+// console.log(resultado);

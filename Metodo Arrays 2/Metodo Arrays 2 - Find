@@ -1,0 +1,19 @@
+const usuarios = [
+  { nome: 'teste', idade: 23 },
+  { nome: 'teste1', idade: 10 },
+  { nome: 'teste2', idade: 19 }
+];
+
+const resultado = usuarios.find((usuario) => {
+  return usuario.nome === 'teste';
+});
+
+console.log(resultado);
+
+const nomes = ['pedro', 'tiago', 'joão'];
+
+const novoResultado = nomes.find((nome) => {
+  return nome === 'joão';
+});
+
+console.log(novoResultado);
