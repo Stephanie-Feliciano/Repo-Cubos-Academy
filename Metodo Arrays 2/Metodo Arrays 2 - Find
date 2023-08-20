@@ -17,3 +17,5 @@ const novoResultado = nomes.find((nome) => {
 });
 
 console.log(novoResultado);
+
+// teste
