@@ -1,0 +1,32 @@
+const numeros = [1, 30, 4, 6, 80, 34];
+
+const ordenarArray = numeros.sort((primeiroElemento, segundoElemento) => {
+  // ordenação crescente.
+  return primeiroElemento - segundoElemento;
+  // // condição realizada através de IF
+  // if (primeiroElemento < segundoElemento) {
+  //   return -1;
+  // } else if (primeiroElemento > segundoElemento) {
+  //   return 1;
+  // } else {
+  //   return 0;
+  // }
+
+});
+
+console.log(ordenarArray);
+
+const novoOdernarArray = numeros.sort((primeiroElemento, segundoElemento) => {
+  // ordenação decrescente.
+  return segundoElemento - primeiroElemento;
+  // // condição realizada através de IF
+  // if (primeiroElemento < segundoElemento) {
+  //   return 1;
+  // } else if (primeiroElemento > segundoElemento) {
+  //   return -1;
+  // } else {
+  //   return 0;
+  // }
+});
+
+console.log(novoOdernarArray);

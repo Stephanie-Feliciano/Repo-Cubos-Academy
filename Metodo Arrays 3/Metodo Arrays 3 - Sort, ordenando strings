@@ -1,0 +1,17 @@
+// letras maiusculas, acentos possuem prioridade das letras minusculas na tabela Unicode
+
+// ordenação crescente
+const pessoas = ['Fulano', 'Ciclano', 'Beltrano', 'João', 'Sérgio', 'Cláudio'];
+
+pessoas.sort((itemA, itemB) => {
+  return itemA.localeCompare(itemB);
+});
+
+console.log(pessoas);
+
+// ordenação decrescente
+pessoas.sort((itemA, itemB) => {
+  return itemB.localeCompare(itemA);
+});
+
+console.log(pessoas);
