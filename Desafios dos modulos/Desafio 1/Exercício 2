@@ -1,0 +1,14 @@
+// A quantidade de dinheiro que ele coloca no cofre a cada dia está registrada na lista de arrays .
+//Faça um programa que calcula quanto Álvaro vem acumulando, em média, por dia.
+
+const lista = [1, 2, 3, 4];
+
+let somaDaLista = 0;
+let mediaDalista = 0;
+
+for (let i = 0; i < lista.length; i++) {
+    somaDaLista = somaDaLista + lista[i];
+    mediaDalista = somaDaLista / lista.length;
+}
+
+console.log(mediaDalista);

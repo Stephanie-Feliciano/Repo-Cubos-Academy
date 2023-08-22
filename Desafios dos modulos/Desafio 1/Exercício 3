@@ -1,0 +1,14 @@
+//Implementar uma função que recebe três argumentos: numero, limiteInferior e limiteSuperior;
+//Essa função deve retornar se esse número pertence ao conjunto que é limitado pelo limiteInferior e limiteSuperior
+//Pertencer ao conjunto significa que dado o numero , ele deve ser maior ou igual que o limiteInferior e menor ou igual ao que o limiteSuperior .
+
+const numero = 10;
+const limiteInferior = 5;
+const limiteSuperior = 20;
+
+if (numero >= limiteInferior && numero <= limiteSuperior) {
+    console.log('PERTENCE');
+
+} else {
+    console.log('NAO PERTENCE');
+}

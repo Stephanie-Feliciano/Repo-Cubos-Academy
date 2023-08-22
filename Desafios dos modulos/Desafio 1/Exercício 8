@@ -1,0 +1,21 @@
+// Para facilitar a resposta do problema, vamos considerar que o capitão está na posição 1, o jogador a sua direita está na posição 2, o jogador a direita deste está na posição 3, e assim por diante.
+// Você deve fazer um programa que determine qual a posição do jogador que deve ser o goleiro.
+
+
+const jogadas = [1, 2, 3, 4]
+
+let soma = 0;
+
+for (let numeroDaJogada of jogadas) {
+    soma += numeroDaJogada;
+}
+
+let resultado = soma % jogadas.length;
+
+if (resultado === 0) {
+    console.log(jogadas.length);
+} else {
+    console.log(resultado);
+}
+
+
