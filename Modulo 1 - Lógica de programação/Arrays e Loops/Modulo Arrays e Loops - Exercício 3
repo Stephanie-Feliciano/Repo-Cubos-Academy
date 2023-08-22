@@ -1,0 +1,11 @@
+// Faça um programa que calcule e imprima na tela a soma dos itens de uma arrays.
+
+const listaDeNumero = [1, 2, 3, 4];
+
+let somaDaLista = 0
+
+for (let i = 0; i < listaDeNumero.length; i++) {
+    somaDaLista = somaDaLista + listaDeNumero[i];
+}
+
+console.log(somaDaLista);

@@ -1,0 +1,11 @@
+const usuarios = [
+  { nome: 'Fulano', sobrenome: 'Teste', idade: 19 },
+  { nome: 'Ciclano', sobrenome: 'Teste1', idade: 32 },
+  { nome: 'Beltrano', sobrenome: 'Teste2', idade: 27 },
+];
+
+const novoArray = usuarios.map((usuario) => {
+  return { nomeCompleto: `${usuario.nome} ${usuario.sobrenome}, idade: ${usuario.idade}` }
+});
+
+console.log(novoArray);

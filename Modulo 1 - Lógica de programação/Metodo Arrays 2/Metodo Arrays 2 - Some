@@ -1,0 +1,18 @@
+const nomes = ['teste', 'teste1', 'teste2', 'teste3'];
+
+const minhaFuncaoCallback = (nome) => {
+  return nome === 'teste';
+}
+
+const resultado = nomes.some(minhaFuncaoCallback);
+
+console.log(resultado);
+
+const numeros = [2, 3, 4];
+
+const novoResultado = numeros.some((numero) => {
+  return numero % 2 === 0;
+});
+
+console.log(novoResultado);
+

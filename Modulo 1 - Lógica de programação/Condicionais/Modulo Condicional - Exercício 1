@@ -1,0 +1,13 @@
+const temIgresso = false;
+const censura = 16;
+const idade = 16;
+
+if (temIgresso === true) {
+    if (idade >= censura) {
+        console.log("Você poderá assistir o filme.");
+    } else {
+        console.log("Você não poderá assistir o filme.");
+    }
+} else {
+    console.log("Você não poderá assistir o filme.")
+}

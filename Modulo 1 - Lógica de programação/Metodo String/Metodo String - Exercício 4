@@ -1,0 +1,14 @@
+
+
+const nomeCompleto = 'teste teste teste'
+let nomeArray = nomeCompleto.split(' ');
+
+let nomeFormatado = '';
+
+for (let nome of nomeArray) {
+  let primeiraLetra = nome.slice(0, 1);
+  let restanteDoNome = nome.slice(1);
+
+  nomeFormatado += primeiraLetra.toUpperCase() + restanteDoNome + ' ';
+}
+console.log(nomeFormatado);

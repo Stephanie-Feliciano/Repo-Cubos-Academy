@@ -1,0 +1,15 @@
+
+
+function filtrar80(dados) {
+  const startIndex = Math.round(dados.length * 10 / 100);
+  //math.round irá arredondar o resultado.
+  const endIndex = Math.round(dados.length * 90 / 100);
+  //math.round irá arredondar o resultado.
+
+  const fatia = dados.slice(startIndex, endIndex);
+  console.log(fatia);
+}
+
+const dados = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+filtrar80(dados);

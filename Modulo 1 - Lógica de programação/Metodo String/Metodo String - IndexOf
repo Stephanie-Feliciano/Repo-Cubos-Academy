@@ -1,0 +1,7 @@
+// Localizando uma palavra através do método indexOf, retornando o número da posição que o texto se encontra; caso não seja localizado, retornará -1.
+
+console.log('Teste 1'.indexOf('1'));
+// busca apenas da palavra 1.
+
+console.log('Teste 1'.indexOf('1', 7));
+// busca da palavra 1, determinando que seja realizada a partir da 7 posição.

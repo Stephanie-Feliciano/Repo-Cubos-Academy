@@ -1,0 +1,26 @@
+const arquivos = ['.bat', '.txt', '.word'];
+
+let verificacaoDeVirus = (arrayArquivo) => {
+  const check = arrayArquivo.some((arquivo) => {
+    const consultandoExtensao = arquivos.indexOf('.bat');
+
+    return consultandoExtensao != -1;
+  });
+
+  if (verificacaoDeVirus) {
+    console.log('Vírus detectado');
+  } else {
+    console.log('Nehum vírus detectado');
+  }
+}
+
+verificacaoDeVirus(arquivos)
+
+
+
+// let check = usuarios.every(usuario => usuario.idade >= 18)
+// if (check) {
+//   console.log('Festa liberada');
+// } else {
+//   console.log('Tem menor');
+// }

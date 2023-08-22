@@ -1,0 +1,16 @@
+// localizando uma letra específica em uma palavra.
+
+const nome = 'Brasil';
+
+let letraLocalizada = false;
+
+for (let letra of nome) {
+    if (letra === 'h') {
+        console.log(`A palavra ${nome} possui a letra h.`);
+        letraLocalizada = true;
+        break
+    }
+}
+if (!letraLocalizada) {
+    console.log(`A palavra ${nome} não possui a letra h.`);
+}

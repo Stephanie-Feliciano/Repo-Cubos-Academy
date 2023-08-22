@@ -1,0 +1,7 @@
+// esta função será utilizada para imprimir Olá
+
+function imprimirOlaMundo() {
+    console.log('Olá mundo!');
+}
+
+imprimirOlaMundo();

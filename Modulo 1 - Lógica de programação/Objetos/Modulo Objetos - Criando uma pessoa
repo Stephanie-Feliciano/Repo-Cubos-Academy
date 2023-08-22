@@ -1,0 +1,10 @@
+// Este arquivo foi utilizado para criação de um objeto teste.
+// Para criação de um objeto, sempre será utilizado {}.
+
+const pessoa = {
+    nome: 'Stephanie',
+    altura: 1.65,
+    peso: 79,
+};
+
+console.log(`Meu nome é ${pessoa.nome}, tenho ${pessoa.altura} e peso ${pessoa.peso}.`)

@@ -1,0 +1,17 @@
+
+// let numero = '1,350,000';
+
+// while (numero !== numero.replace(',', '.')) {
+//   numero = numero.replace(',', '.');
+// }
+// console.log(numero);
+
+function repliceAll(original, texto, novoTexto) {
+  while (original !== original.replace(texto, novoTexto)) {
+    original = original.replace(texto, novoTexto);
+  }
+  return original;
+}
+
+let numero = '1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1'
+console.log(repliceAll(numero, ',', '.'));
