@@ -1,0 +1,69 @@
+let personagemMarcoRossi;
+
+let tamanhoPersonagemLargura = 85;
+
+let tamanhoPersonagemAltura = 50;
+
+let cenario;
+
+let boss;
+
+let andarPraFrente = 0;
+
+let velocidade = 8;
+
+let restart;
+
+// -----------------------------------
+
+function setup() {
+  createCanvas(576, 576);
+  personagemMarcoRoosi = loadImage('Marco_Rossi-png.png');
+  boss = loadImage('Primeiro_Boss.png.png')
+  cenario = loadImage('Cenario 3.png');
+
+}
+
+function draw() {
+  if (andarPraFrente < 0) {
+    andarPraFrente = 0;
+  }
+  if (andarPraFrente > 576 - 175) {
+    andarPraFrente = 576 - 175;
+  }
+
+  background(220);
+
+  image(cenario, 0, 0, 576, 576);
+  image(personagemMarcoRoosi, andarPraFrente, 495, tamanhoPersonagemLargura, tamanhoPersonagemAltura);
+  image(boss, 425, 455, 150, 100);
+
+  // ----- final do jogo / mensagem de finalização.
+
+  if (andarPraFrente === 576 - 175) {
+    rect(150, 150, 300, 300);
+    textSize(16);
+    text('Parabéns, você matou o primeiro Boss!', 163, 300);
+
+    restart = createButton('Reinicie o jogo');
+    restart.mousePressed(reset);
+
+    noLoop();
+  }
+
+  function reset() {
+    andarPraFrente = 0;
+    restart.remove();
+    loop();
+  }
+
+
+  // ----- movimento do personagem
+
+  if (keyIsDown(RIGHT_ARROW)) {
+    andarPraFrente += velocidade;
+  }
+  if (keyIsDown(LEFT_ARROW)) {
+    andarPraFrente -= velocidade;
+  }
+}
