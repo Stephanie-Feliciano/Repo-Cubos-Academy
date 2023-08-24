@@ -8,4 +8,4 @@ const arrayReduzida = array.reduce((acumulador, elementoAtual, indice, array) =>
   return [...acumulador, ...elementoAtual];
 }, []);
 
-console.log(arrayReduzida)
+console.log(arrayReduzida);

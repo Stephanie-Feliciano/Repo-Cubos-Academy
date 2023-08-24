@@ -1,9 +1,0 @@
-// testando o método Every()
-
-const nomesAlunos = ['Abel', 'Bento', 'Isabela', 'Gustavo'];
-
-const imprimir = nomesAlunos.every(function (elementoAtual) {
-  return elementoAtual != 'Evandro';
-}, 5000);
-
-console.log(imprimir)

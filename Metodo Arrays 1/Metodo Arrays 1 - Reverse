@@ -1,7 +1,0 @@
-// Inverte a ordem dos itens de uma array.
-// Esta modificação afeta o original, ou seja, não criará uma cópia da variável para execução.
-
-const numeros = [1, 2, 3, 4];
-const invertendoNumeros = numeros.reverse()
-
-console.log(invertendoNumeros);

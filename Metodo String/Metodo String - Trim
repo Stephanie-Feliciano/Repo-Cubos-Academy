@@ -1,5 +1,0 @@
-
-const email = '      _teste@teste.com_     '
-
-console.log(email);
-console.log(email.trim());

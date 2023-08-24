@@ -1,5 +1,0 @@
-// iniciando os exercícios solicitados pelo curso Cubos Academy
-
-const cidadeNatal = "São Paulo";
-
-console.log(cidadeNatal);

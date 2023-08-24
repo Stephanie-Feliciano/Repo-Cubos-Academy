@@ -1,6 +1,0 @@
-// Para o texto dado na entrada, imprima na tela quantas palavras existem neste texto.
-
-let contarTexto = texto.trim();
-let arrayTexto = contarTexto.split(" ").filter(x => x.trim() !== '');
-
-console.log(arrayTexto.length);

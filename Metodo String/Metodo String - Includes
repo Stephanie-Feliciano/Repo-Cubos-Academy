@@ -1,9 +1,0 @@
-// Localizando uma palavra através do método includes, retornando em modo booleano (true, false).
-
-const frase = 'Isto aqui é um teste para verificar o comportamento do include.'
-
-console.log(frase.includes('teste'));
-// busca apenas da palavra Teste.
-
-console.log(frase.includes('teste', 10));
-// busca da palavra teste, determinando que seja realizada a partir da 10 posição.

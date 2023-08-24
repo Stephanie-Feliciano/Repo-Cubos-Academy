@@ -1,9 +1,0 @@
-
-function imprimirData(dia, mes, ano) {
-  const diaEmString = String(dia).padStart(2, '0');
-  const mesEmString = String(mes).padStart(2, '0');
-
-  console.log(`${diaEmString}/${mesEmString}/${ano}`);
-}
-
-imprimirData(1, 2, 2023);
