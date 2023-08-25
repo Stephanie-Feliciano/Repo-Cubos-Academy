@@ -1,0 +1,17 @@
+// arquivo que será exportado
+
+const arrayNumeros = [1, 2, 4, 4, 6, 7, 1];
+
+const arrayLetras = ['a, a, b, b, c, c, d'];
+
+
+module.exports = {
+  arrayNumeros: arrayNumeros,
+  arrayLetras: arrayLetras
+};
+
+// Quando o nome da propriedade do objeto é igual ao seu valor, é possível apenas utilizar o nome da proriedade.
+// module.exports = {
+//   arrayNumeros,
+//   arrayLetras
+// };

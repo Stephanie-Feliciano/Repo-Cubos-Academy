@@ -1,0 +1,27 @@
+// require('nome da biblioteca desejada') serve para realizar a importação de bibliotecas e arquivos.
+
+const lodash = require('lodash'); // variável padrão para importar a biblioteca completa.
+
+const arrayTeste = [1, 2, 4, 4, 6, 7, 1];
+
+const arrayUnico = lodash.uniq(arrayTeste);
+
+console.log(arrayUnico);
+
+// utilizando o método uniq de outra forma.
+
+console.log('===============================================');
+
+const { uniq } = require('lodash'); // não seja necessário importar a biblioteca completa, basta inserir o nome do método em {}.
+
+const { arrayNumeros, arrayLetras } = require('./Primeiro servidor - Importando arquivos existentes'); //arquivo recebido aqui.
+
+console.log(arrayNumeros);
+console.log(arrayLetras);
+
+
+const arrayNumerosUnico = uniq(arrayNumeros);
+const arrayLetrasUnico = uniq(arrayLetras);
+
+console.log(arrayNumerosUnico);
+console.log(arrayLetrasUnico);
