@@ -66,7 +66,7 @@ const atualizarInstrutor = (requisicao, resposta) => {
   instrutor.email = email;
   instrutor.status = status;
 
-  return resposta.status(204).json;
+  return resposta.status(204).json();
 };
 
 const atualizarStatusInstrutor = (requisicao, resposta) => {
@@ -83,7 +83,7 @@ const atualizarStatusInstrutor = (requisicao, resposta) => {
 
   instrutor.status = status;
 
-  return resposta.status(204).json;
+  return resposta.status(204).json();
 };
 
 const excluirInstrutor = (requisicao, resposta) => {
@@ -102,7 +102,7 @@ const excluirInstrutor = (requisicao, resposta) => {
 
   });
 
-  return resposta.status(204).json;
+  return resposta.status(204).json();
 
 };
 

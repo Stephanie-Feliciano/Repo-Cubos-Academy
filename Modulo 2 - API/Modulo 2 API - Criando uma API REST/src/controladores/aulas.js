@@ -24,6 +24,27 @@ const cadastrarAulas = (requisicao, resposta) => {
 
 };
 
+const listarAulas = (requisicao, resposta) => {
+  return resposta.status(200).json(aulas);
+};
+
+const obterAulas = (requisicao, resposta) => {
+  const { id } = requisicao.params;
+
+  const aula = aulas.find((aula) => {
+    return aula.id === Number(id);
+  });
+
+  if (!aula) {
+    return resposta.status(404).json({ mensagem: 'Aula não encontrada.' });
+  };
+
+  return resposta.status(200).json(aula);
+};
+
+
 module.exports = {
-  cadastrarAulas
+  cadastrarAulas,
+  listarAulas,
+  obterAulas
 }
