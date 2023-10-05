@@ -42,9 +42,28 @@ const obterAulas = (requisicao, resposta) => {
   return resposta.status(200).json(aula);
 };
 
+const obterAulasInstrutor = (requisicao, resposta) => {
+  const { idInstrutor } = requisicao.params;
+
+  const instrutor = instrutores.find((instrutor) => {
+    return instrutor.id = Number(idInstrutor);
+  });
+
+  if (!instrutor) {
+    return resposta.status(404).json({ mensagem: 'Instrutor não encontrado.' })
+  }
+
+  const aulaEncontradas = aulas.filter((aula) => {
+    return aula.instrutor_id === Number(instrutor_id);
+  });
+
+  return resposta.status(200).json(aulaEncontradas);
+};
+
 
 module.exports = {
   cadastrarAulas,
   listarAulas,
-  obterAulas
+  obterAulas,
+  obterAulasInstrutor
 }
